@@ -15,10 +15,10 @@
 
 
 
-    <form action="">
+    <!-- <form action="">
 
         <div> NAME :
-            <input type="text" name="name" maxlength="14">
+            <input type="text" name="name" maxlength="14" required>
              EMAIL : <input type="email" name="mail" >
              PASSWORD: <input type="password" name="password">
              AGE : <input type="number" name="NUMBER">
@@ -35,6 +35,24 @@
             DATE :  <input type="datetime-local" name="datetime">
         </div>
 
+    </form> -->
+
+    <form action="">
+        <label for="name"> NAME : </label>
+        <input type="text" name="name" placeholder="name" required>
+        <br>
+        <br>
+
+        <label for="email">EMAIL : </label>
+        <input type="email" name="email" placeholder="email" required><br><br>
+
+        <label for="password">PASSWORD : </label>
+        <input type="password" name="password" placeholder="password" required><br><br>
+
+        <label for="file">FILE : </label>
+        <input type="file" name="file">
+
+        <button type="submit">SUBMIT</button>  <button type="reset">RESET</button>
     </form>
 
 
